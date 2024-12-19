@@ -3,21 +3,27 @@ from colorama import Fore, Style, init # for styling. pip install colorama
 init()
 
 def start_adventure(): # functions - covered by William in lecture # 4
-    print(Fore.GREEN+"Welcome to A Very Python Christmas ")
+    print(Fore.GREEN + "Welcome to A Very Python Christmas " + Style.RESET_ALL)
+    print()
+    print()
     print("The snow falls softly outside, blanketing the town of Hollybrooke in a thick layer of white.  You're curled up by the fire, sipping hot cocoa, when suddenly, there's a rustling at the door. You open it to find a small, green Python named Pythius shivering in the cold.")
     print("'Hello,' he whispers, his voice barely audible over the wind. 'My name is Pythius, and I need your help! Santa's sleigh has been stolen!'")
     print("(A) Help Pythius find Santa's sleigh without delay?")
     print("(B) Offer Pythius some hot cocoa and have him sit down first?")
-    print("Press A or B to continue")
+    print()
+    print(Fore.RED + "Press A or B to continue" + Style.RESET_ALL)
 
     choice = input("Enter A or B: ") # user input - was covered in the first lecture! 
 
-    if choice == "A":
+    if choice == "A".lower():
         find_sleigh()
-    elif choice == "B":
+        print()
+    elif choice == "B".lower():
         hot_cocoa()
+        print()
     else:
-        print("Invalid choice. Try again!")
+        print(Fore.RED + "Invalid choice. Try again!" + Style.RESET_ALL)
+        print()
         start_adventure()
 
 def find_sleigh(): 
@@ -28,13 +34,13 @@ def find_sleigh():
     print("Do you:")
     print("(A) Take Pythius directly to Mount Evergreen? You know the way.")
     print("(B) Ask Pythius if he knows any other clues about where the Grinch might have taken the sleigh?")
-    print("Press A or B to continue")
+    print(Fore.Red + "Press A or B to continue" + Style.RESET_ALL)
     
     choice = input("Enter A or B: ") # user input - was covered in the first lecture! 
     
-    if choice == "A":
+    if choice == "A".lower():
         go_to_mountain()
-    elif choice == "B":
+    elif choice == "B".lower():
         hot_cocoa()
     else:
         print("Invalid choice. Try again!")
@@ -51,9 +57,9 @@ def hot_cocoa():
     
     choice = input("Enter A or B: ") # user input - was covered in the first lecture! 
     
-    if choice == "A":
+    if choice == "A".lower():
         go_to_ice_palace()
-    elif choice == "B":
+    elif choice == "B".lower():
         more_info()
     else:
         print("Invalid choice. Try again!")
