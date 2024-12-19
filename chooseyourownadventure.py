@@ -1,4 +1,3 @@
-
 def start_adventure(): # functions - covered by William in lecture # 4#-
     print("Welcome to A Very Python Christmas ")
     print("The snow falls softly outside, blanketing the town of Hollybrooke in a thick layer of white.  You're curled up by the fire, sipping hot cocoa, when suddenly, there's a rustling at the door. You open it to find a small, green Python named Pythius shivering in the cold.")
