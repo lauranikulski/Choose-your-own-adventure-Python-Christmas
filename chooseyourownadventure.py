@@ -32,7 +32,7 @@ def find_sleigh():
     print("'Well, we can't let that happen,' you say resolutely.") 
     print("Pythius tells you that Santa usually stores his sleigh in a hidden cave on Mount Evergreen.") 
     print()
-    print(Fore.RED + "Choose A or B: " + Style.RESET_ALL))
+    print(Fore.RED + "Choose A or B: " + Style.RESET_ALL)
     print("(A) Take Pythius directly to Mount Evergreen? You know the way.")
     print("(B) Ask Pythius if he knows any other clues about where the Grinch might have taken the sleigh?")
     print(Fore.Red + "Press A or B to continue" + Style.RESET_ALL)
