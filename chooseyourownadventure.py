@@ -1,3 +1,4 @@
+
 def start_adventure(): # functions - covered by William in lecture # 4#-
     print("Welcome to A Very Python Christmas ")
     print("The snow falls softly outside, blanketing the town of Hollybrooke in a thick layer of white.  You're curled up by the fire, sipping hot cocoa, when suddenly, there's a rustling at the door. You open it to find a small, green Python named Pythius shivering in the cold.")
@@ -64,3 +65,8 @@ def go_to_ice_palace():
 
 def more_info():
     pass
+
+# this helps start the game, needs to be at the bottom of the script
+# to start game, open a terminal, pipenv shell, python3 chooseyourownadventure.py
+if __name__ == "__main__":
+    start_adventure()
