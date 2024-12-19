@@ -1,6 +1,9 @@
+from colorama import Fore, Style, init # for styling. pip install colorama
 
-def start_adventure(): # functions - covered by William in lecture # 4#-
-    print("Welcome to A Very Python Christmas ")
+init()
+
+def start_adventure(): # functions - covered by William in lecture # 4
+    print(Fore.GREEN+"Welcome to A Very Python Christmas ")
     print("The snow falls softly outside, blanketing the town of Hollybrooke in a thick layer of white.  You're curled up by the fire, sipping hot cocoa, when suddenly, there's a rustling at the door. You open it to find a small, green Python named Pythius shivering in the cold.")
     print("'Hello,' he whispers, his voice barely audible over the wind. 'My name is Pythius, and I need your help! Santa's sleigh has been stolen!'")
     print("(A) Help Pythius find Santa's sleigh without delay?")
@@ -67,6 +70,8 @@ def more_info():
     pass
 
 # this helps start the game, needs to be at the bottom of the script
-# to start game, open a terminal, pipenv shell, python3 chooseyourownadventure.py
+# to start game, navigate to your local folder
+# in my case, cd OneDrive/Desktop/projects/"Choose your own adventure"/revised 
+# open a terminal, pipenv shell, python3 chooseyourownadventure.py
 if __name__ == "__main__":
     start_adventure()
