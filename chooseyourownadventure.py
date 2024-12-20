@@ -36,13 +36,13 @@ def find_sleigh():
     print(Fore.RED + "Choose A or B: " + Style.RESET_ALL)
     print("(A) Take Pythius directly to Mount Evergreen? You know the way.")
     print("(B) Ask Pythius if he knows any other clues about where the Grinch might have taken the sleigh?")
-    print(Fore.Red + "Press A or B to continue" + Style.RESET_ALL)
+    print(Fore.RED + "Press A or B to continue" + Style.RESET_ALL)
     
     choice = input("Enter A or B: ") # user input - was covered in the first lecture! 
     
-    if choice.lower() == "a"():
+    if choice.lower() == "a":
         go_to_mountain()
-    elif choice.lower() == "b"():
+    elif choice.lower() == "b":
         hot_cocoa()
     else:
         print("Invalid choice. Try again!")
