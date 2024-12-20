@@ -1,9 +1,10 @@
-from colorama import Fore, Style, init # for styling. pip install colorama
+from colorama import Fore, Style, init # for styling. 
+# pip install colorama from your terminal. may need to restart code editor for installation to complete. 
 
 init()
 
 def start_adventure(): # functions - covered by William in lecture # 4
-    print(Fore.GREEN + "Welcome to A Very Python Christmas " + Style.RESET_ALL)
+    print(Fore.GREEN + "Welcome to A Very Python Christmas " + Style.RESET_ALL) # if you don't reset the style, colouring will continue
     print()
     print()
     print("The snow falls softly outside, blanketing the town of Hollybrooke in a thick layer of white.  You're curled up by the fire, sipping hot cocoa, when suddenly, there's a rustling at the door. You open it to find a small, green Python named Pythius shivering in the cold.")
@@ -39,9 +40,9 @@ def find_sleigh():
     
     choice = input("Enter A or B: ") # user input - was covered in the first lecture! 
     
-    if choice == "A".lower():
+    if choice.lower() == "a"():
         go_to_mountain()
-    elif choice == "B".lower():
+    elif choice.lower() == "b"():
         hot_cocoa()
     else:
         print("Invalid choice. Try again!")
@@ -58,9 +59,9 @@ def hot_cocoa():
     
     choice = input("Enter A or B: ") # user input - was covered in the first lecture! 
     
-    if choice == "A".lower():
+    if choice.lower() == "a":
         go_to_ice_palace()
-    elif choice == "B".lower():
+    elif choice.lower() == "b":
         more_info()
     else:
         print("Invalid choice. Try again!")
@@ -79,6 +80,7 @@ def more_info():
 # this helps start the game, needs to be at the bottom of the script
 # to start game, navigate to your local folder
 # in my case, cd OneDrive/Desktop/projects/"Choose your own adventure"/revised 
-# open a terminal, pipenv shell, python3 chooseyourownadventure.py
+# open a terminal, pipenv shell, 
+
 if __name__ == "__main__":
     start_adventure()
