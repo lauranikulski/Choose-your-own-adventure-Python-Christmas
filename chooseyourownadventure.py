@@ -16,10 +16,10 @@ def start_adventure(): # functions - covered by William in lecture # 4
 
     choice = input("Enter A or B: ") # user input - was covered in the first lecture! 
 
-    if choice == "A".lower():
+    if choice.lower() == "a":
         find_sleigh()
         print()
-    elif choice == "B".lower():
+    elif choice.lower() == "b":
         hot_cocoa()
         print()
     else:
@@ -69,13 +69,13 @@ def hot_cocoa():
     
     
 def go_to_mountain():
-    pass
+    print("You have reached the end of this tutorial.")
 
 def go_to_ice_palace():
-    pass
+    print("You have reached the end of this tutorial.")
 
 def more_info():
-    pass
+    print("You have reached the end of this tutorial.")
 
 # this helps start the game, needs to be at the bottom of the script
 # to start game, navigate to your local folder
