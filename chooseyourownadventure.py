@@ -46,6 +46,7 @@ def find_sleigh():
         hot_cocoa()
     else:
         print("Invalid choice. Try again!")
+        find_sleigh()
     
 def hot_cocoa():
     print("You decide to gather more information before heading straight to Mount Evergreen. 'Pythius,' you ask, 'do you know anything else about where the Grinch might have taken Santa's sleigh?'")
@@ -64,6 +65,7 @@ def hot_cocoa():
         more_info()
     else:
         print("Invalid choice. Try again!")
+        hot_cocoa()
     
 def go_to_mountain():
     print("You have reached the end of this tutorial.")
@@ -77,7 +79,7 @@ def more_info():
 # this helps start the game, needs to be at the bottom of the script
 # to start game, navigate to your local folder
 # in my case, cd OneDrive/Desktop/projects/"Choose your own adventure"/revised 
-# open a terminal, pipenv shell, 
+# open a terminal, pipenv shell, then hit enter
 
 if __name__ == "__main__":
     start_adventure()
