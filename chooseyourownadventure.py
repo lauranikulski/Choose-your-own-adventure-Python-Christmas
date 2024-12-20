@@ -46,7 +46,6 @@ def find_sleigh():
         hot_cocoa()
     else:
         print("Invalid choice. Try again!")
-        find_sleigh()
     
 def hot_cocoa():
     print("You decide to gather more information before heading straight to Mount Evergreen. 'Pythius,' you ask, 'do you know anything else about where the Grinch might have taken Santa's sleigh?'")
@@ -65,8 +64,6 @@ def hot_cocoa():
         more_info()
     else:
         print("Invalid choice. Try again!")
-        find_sleigh()
-    
     
 def go_to_mountain():
     print("You have reached the end of this tutorial.")
